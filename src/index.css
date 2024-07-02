@@ -45,3 +45,11 @@ body {
     background:radial-gradient(ellipse at center, #000000 27.5%, #c22a1e 27.5%) 62.5% 37.5% / 100% 200% no-repeat;
   }
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  * {
+    font-size: 15px;
+    /* font-weight: 700; */
+    /* letter-spacing: -.05em; */
+  }
+}

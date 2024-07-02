@@ -2,6 +2,10 @@
 
 Aplicação front-end em React que apresenta o próximo jogo do flamengo, com a opção de adicionar ao Google calendário.
 
+# Todo's
+
+- Refactor
+
 # Techs
 
 - React
