@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import getNextGame from "../../services/ApiService.ts";
 import { useEffect } from "react";
 import { formatDate, formatTime } from "../../utils/DateUtils.ts";
