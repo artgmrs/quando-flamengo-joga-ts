@@ -4,6 +4,10 @@ Aplicação front-end em React que apresenta o próximo jogo do flamengo, com a 
 
 # Todo's
 
+- ìcone aba
+- title
+- corrigir link linkedin
+- icone calendar
 - Refactor
 
 # Techs
