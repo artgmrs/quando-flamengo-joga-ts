@@ -34,10 +34,6 @@ width: 150px;
 height: 170px;
 }
 
-.championship {
-
-}
-
 .box-teams {
 display: flex;
 flex-direction: row;
@@ -59,10 +55,23 @@ flex-direction: column;
 align-items: center;
 }
 
+
 .link {
-text-decoration: none;
-margin: 15px;
-display: block;
+  background-color: #c22a1e;
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  display: block;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.link:hover{
+  filter: drop-shadow(0 0 1em #c22a1e);
+}
+
+.icon-calendar {
+  margin-left: 5px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -68,18 +68,17 @@ const GameInfo = () => {
               <Mandante {...dados} />
               <h4>{formatDate(dados.dataHoraJogo)}</h4>
               <h4>{formatTime(dados.dataHoraJogo)}</h4>
-              <div className="box-link">
-                <a
-                  className="link"
-                  href={generateGoogleCalendarLink(
-                    dados.nomeRival,
-                    dados.dataHoraJogo
-                  )}
-                  target="_blank"
-                >
-                  Adicionar ao calendário
-                </a>
-              </div>
+              <a
+                className="link"
+                href={generateGoogleCalendarLink(
+                  dados.nomeRival,
+                  dados.dataHoraJogo
+                )}
+                target="_blank"
+              >
+                Adicionar ao calendário
+                <i className="icon-calendar fa-regular fa-calendar"></i>
+              </a>
             </>
           )}
         </div>
