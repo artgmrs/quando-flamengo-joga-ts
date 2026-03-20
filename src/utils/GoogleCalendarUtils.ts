@@ -1,12 +1,13 @@
 import { addHours } from "./DateUtils";
 
-const generateGoogleCalendarLink = ( nomeRival: string, dateString: string ) => {
+const generateGoogleCalendarLink = (nomeRival: string, dateString: string, mandante: boolean) => {
   const date = new Date(dateString);
   if (nomeRival !== undefined && date !== undefined)
   {
     const baseUrl = 'https://calendar.google.com/calendar/render';
-  
-    const title = encodeURIComponent(`Flamengo x ${nomeRival}`);
+
+    const eventTitle = mandante ? `Flamengo x ${nomeRival}` : `${nomeRival} x Flamengo`;
+    const title = encodeURIComponent(eventTitle);
   
     const startDate = date.toISOString().replace(/[.]\d+/, '').replace(/[^a-zA-Z0-9]/g, '');
     const endDate = addHours(date, 2).toISOString().replace(/[.]\d+/, '').replace(/[^a-zA-Z0-9]/g, '');

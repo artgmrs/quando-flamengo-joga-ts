@@ -1,8 +1,11 @@
-import "./App.css";
-import GameInfo from "./components/GameInfo/GameInfo";
+import GameInfo from "./components/GameInfo/GameInfo.tsx";
 
 function App() {
-  return <GameInfo />;
+  return (
+    <div className="app">
+      <GameInfo />
+    </div>
+  );
 }
 
 export default App;
